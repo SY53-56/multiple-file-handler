@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <aside class="side">
+         <div class="step1">
+       <span class="one">1</span>
+    <div class="text">
+         <h3>  Step 1</h3>
+     <h1>  Your info</h1>
+    </div>
+      </div>
+    <div class="step2">
+       <span class="two">2</span>
+    <div class="text">
+         <h3>  Step 2</h3>
+     <h1>   Select plan</h1>
+    </div>
+      </div>
+    <div class="step3">
+       <span class="three">3</span>
+    <div class="text">
+         <h3>  Step 3</h3>
+     <h1>    Add-ons</h1>
+    </div>
+      </div>
+    <div class="step4">
+       <span class="four">4</span>
+    <div class="text">
+         <h3>  Step 4</h3>
+     <h1>   Summary</h1>
+    </div>
+      </div>
+       
+      </aside>
+      <main>
+        <div id="step-1">
+            <h1>  Personal info</h1>
+            <p> Please provide your name, email address, and phone number.</p>
+            <form  action="">
+                  <label for="name">name</label>
+                  <input type="text" name="" id="name" required placeholder="  e.g. Stephen King">
+                        <p class="nameError"></p>
+                  <label for="email">Email Address</label>
+                  <input type="email" name="" id="email" placeholder=" e.g. stephenking@lorem.com">
+                        <p class="emailError"></p>
+                  <label for="number">Phone number</label>
+                  <input type="text" name="" required id="number" placeholder=" e.g. +1 234 567 890">
+                  <p class="numberError"></p>
+                   <button type="submit" class="next">Next step</button>
+            </form>
+           
+        </div>
+        <div id="step-2">
+            <h1> Select your plan</h1>
+            <p> You have the option of monthly or yearly billing.</p>
+            <div class="image">
+                <div class="img1"  data-plan="  Arcade">
+                    <div>
+                      <img src="./assets/images/icon-arcade.svg" alt="">
+                    </div>
+                    <h2> Arcade</h2>
+                    <h4 > $5/mo</h4>
+                </div>
+                <div class="img1"  data-plan="Advanced">
+                   <div>
+                     <img src="./assets/images/icon-advanced.svg" alt="">
+                   </div>
+                    <h2> Advanced</h2>
+                    <h4> $9/mo</h4>
+                </div>
+                <div class="img1"  data-plan="  Pro">
+                   <div>
+                     <img src="./assets/images/icon-pro.svg" alt="">
+                   </div>
+                    <h2>  Pro</h2>
+                    <h4> $13/mo</h4>
+                </div>
+            </div>
+           <div class="plan-choose">
+           <div class="plan">
+             <p class="p">Monthly</p>
+            <input type="checkbox" name="" id="monthly" >
+           </div>
+            <div class="plan">
+              <p>yearly</p>
+            <input type="checkbox" name="" id="yearly">
+            </div>
+           </div>
+            <div class="button">
+                <button class="back">Back</button>
+
+                <button class="next-go">next step</button>
+            </div>
+        </div>
+
+
+        <div id="step-3">
+      <h1>Pick add-ons</h1>
+      <p> Add-ons help enhance your gaming experience.</p>
+        <div class="choose-servies">
+ <div class="servies" data-servies="online-servies">
+          <input type="checkbox" class="online-servies">
+          <div class="online">
+            <h2>  Online service</h2>
+            <p>Access to multiplayer games</p>
+          </div>
+          <p>+$1/mo</p>
+        </div>
+
+         <div class="servies" data-servies="local-storage">
+          <input type="checkbox" class="storage">
+          <div class="online">
+            <h2>  Larger storage</h2>
+            <p> Custom theme on your profile</p>
+          </div>
+          <p class="">  +$2/mo</p>
+        </div>
+
+        <div class="servies" data-servies="profile">
+          <input  type="checkbox">
+          <div class="online">
+            <h2 >  Customizable Profile</h2>
+            <p>  Custom theme on your profile</p>
+          </div>
+          <p>  +$2/mo</p>
+        </div>
+        </div>
+        <div class="button1">
+                <button class="back1">Back</button>
+
+                <button class="next1">next step</button>
+            </div>
+        </div>
+
+        <div id="step-4">
+          <h1>  Finishing up</h1>
+          <p> Double-check everything looks OK before confirming.</p>
+          <div class="Finishing">
+           <div class="pack">
+             <h2 class="plan-pack">Arcade(Monthly)</h2>
+             <h3 class="plan-pack-money">$9/mo</h3>
+           </div>
+           <p class="change">change</p>
+           <div class="add-ons">
+  <div class="pack2">
+    <p class="plan-online">Online service</p>
+    <h3 class="plan-online-money">+$1/mo</h3>
+  </div>
+
+  <div class="pack3">
+    <p class="plan-storage">Larger storage</p>
+    <h3 class="plan-storage-money">+$2/mo</h3>
+  </div>
+</div>
+<div class="step-4">
+
+</div>
+
+
+
+          </div>
+        <div class="total">
+            <p>Total (per month)</p>
+            <h2 class="total-money">+$12/mo</h2>
+        </div>
+        <div class="button3">
+          <button class="back2">back</button>
+          <button class="Confirm">Confirm</button>
+        </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
